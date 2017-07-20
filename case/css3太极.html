@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background-color: #efefef;
+            }
+            .box-taiji{
+                width: 0;
+                height: 400px;
+                margin: 50px auto;
+                border-left: 200px solid #fff;
+                border-right: 200px solid #000;
+                border-radius: 50%;
+                position: relative;
+                animation: move 5s linear infinite;
+            }
+            .box-taiji:before,.box-taiji:after{
+                content: "";
+                position: absolute;
+                display: block;
+                border-radius: 50%;
+            }
+            .box-taiji:before{
+                width: 200px;
+                height: 200px;
+                top: 0;
+                left: -100px;
+                background-color: #fff;
+                box-shadow: 0 200px 0 #000;
+            }
+            .box-taiji:after{
+                width: 50px;
+                height: 50px;
+                top: 70px;
+                left: -20px;
+                background-color: #000;
+                box-shadow: 0 200px 0 #fff;
+            }
+            @keyframes move{
+                form{
+                    transform: rotate(0deg);
+                }to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-taiji"></div>
+    </body>
+</html>

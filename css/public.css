@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*-----*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #505050;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+a:focus,a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+a img {
+  border: none;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #fff;
+  font: 14px "Microsoft YaHei", 微软雅黑, 宋体, helvetica, "Hiragino Sans GB";
+  -webkit-text-size-adjust: 100%;
+}
+
+/*--select文本选中颜色设置---*/
+::selection {
+  color: #fff;
+  background: #fa862e;
+  text-shadow: none;
+}
+
+/*禁止文本选中*/
+.noSelect{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/*--placeholder提示信息颜色设置---*/
+::-webkit-input-placeholder { /* WebKit browsers */
+　　color:#ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+　　color:#ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+　　color:#ccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+　　color:#ccc;
+}
+
+/*--清除浮动---*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/*-----*/
+
+
+.fL { float: left!important; }
+.fR { float: right!important; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-error { color: #b94a48; }
+.text-success { color: #468847; }
+
+.hide { display: none; }
+.show { display: block; }
+.invisible { visibility: visible; }
+.inhidden { visibility: hidden; }
+
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*-----*/

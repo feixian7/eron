@@ -9,7 +9,9 @@ button {
 	-webkit-appearance: none;
 }
 
-/*--reset--*/
+
+/*reset*/
+
 html,
 body,
 div,
@@ -77,20 +79,24 @@ td {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 body {
 	line-height: 1;
 	color: #505050;
 	background: #fff;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 table {
-    border-collapse: separate;
+	border-collapse: separate;
 	border-spacing: 0;
 	vertical-align: middle;
 }
+
 caption,
 th,
 td {
@@ -98,31 +104,44 @@ td {
 	font-weight: normal;
 	vertical-align: middle;
 }
+
 a {
-    color: #08c;
-    text-decoration: none;
+	color: #08c;
+	text-decoration: none;
 }
-a:focus,a:hover {
-    color: #005580;
-    text-decoration: underline;
+
+a:focus,
+a:hover {
+	color: #005580;
+	text-decoration: underline;
 }
+
 a img {
-  	border: none;
+	border: none;
 }
+
 input,
 button {
 	margin: 0;
 	padding: 0;
 }
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
 	border: 0;
 	padding: 0;
 }
-strong { font-weight: 700; }
-em { font-style: italic; }
 
-/* ---- */
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+
+/*-----*/
 
 *,
  :after,
@@ -142,6 +161,12 @@ body {
 body {
 	background: #fff;
 	font: 14px "Microsoft YaHei", 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
+}
+
+body,button,input,keygen,legend,select,textarea {
+    line-height: 1.5;
+    color: #333;
+    outline: 0;
 }
 
 /*--select文本选中颜色设置---*/
@@ -226,4 +251,26 @@ body {
 
 
 
-/*-----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

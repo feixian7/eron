@@ -1,5 +1,15 @@
 @charset "utf-8";
-/*-----*/
+
+/*iphone手机的input的样式问题*/
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	-webkit-appearance: none;
+}
+
+/*--reset--*/
 html,
 body,
 div,
@@ -112,14 +122,26 @@ button::-moz-focus-inner {
 strong { font-weight: 700; }
 em { font-style: italic; }
 
+/* ---- */
+
+*,
+ :after,
+ :before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
 html,
 body {
  	 height: 100%;
 }
 body {
 	background: #fff;
-	font: 14px "Microsoft YaHei", 微软雅黑, 宋体, helvetica, "Hiragino Sans GB";
-	-webkit-text-size-adjust: 100%;
+	font: 14px "Microsoft YaHei", 微软雅黑, 宋体, Arial, Helvetica, sans-serif;
 }
 
 /*--select文本选中颜色设置---*/
@@ -142,6 +164,7 @@ body {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
 /*文本超出省略号显示-多行-2表示行数*/
 .text-overflow-row-2{
  	overflow: hidden;
@@ -165,7 +188,7 @@ body {
 　　color:#ccc;
 }
 
-/*--清除浮动---*/
+/*--clearfix---*/
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -178,8 +201,7 @@ body {
     *zoom: 1;
 }
 
-/*-----*/
-
+/*--public类---*/
 
 .fL { float: left!important; }
 .fR { float: right!important; }

@@ -163,13 +163,6 @@ body,button,input,keygen,legend,select,textarea {
     outline: 0;
 }
 
-/*--select文本选中颜色设置---*/
-::selection {
-	color: #fff;
-	background: #fa862e;
-	text-shadow: none;
-}
-
 /*禁止文本选中*/
 .no-select{
     -moz-user-select: none;
@@ -194,31 +187,38 @@ body,button,input,keygen,legend,select,textarea {
 }
 
 /*--placeholder提示信息颜色设置---*/
-::-webkit-input-placeholder { /* WebKit browsers */
-　　color:#ccc;
-}
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-　　color:#ccc;
+    color: #ccc; 
 }
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-　　color:#ccc;
+    color: #ccc;
 }
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-　　color:#ccc;
+
+input:-ms-input-placeholder{
+    color: #ccc;
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;
 }
 
 /*--clearfix---*/
+.clearfix {
+	*zoom: 1;
+}
+
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	display: table;
+	line-height: 0;
+	content: "";
 }
+
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
-.clearfix {
-    *zoom: 1;
-}
+
 
 /*--public类---*/
 
@@ -237,18 +237,33 @@ body,button,input,keygen,legend,select,textarea {
 .invisible { visibility: visible; }
 .inhidden { visibility: hidden; }
 
+.fixed{position: fixed;}
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 780px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
+.btn, input {
+    font-size: .14rem;
+    outline: 0;
+}
 
+.btn{
+	display: block;
+	height: .8rem;
+    line-height: .8rem;
+    background-color: #eee;
+    border-radius: 2px;
+    border: 0;	
+}
 
-
-
-
-
+.btn,.quick-login,.quick-login a{
+	text-align: center;
+}
 
 
 

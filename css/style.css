@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+html {
+    -webkit-test-size-adjust: 100%;
+    -ms-test-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,"Microsoft YaHei",Arial,sans-serif;
+    margin: 0;
+    font-size: 1.6rem;
+    background-color: #f9f9f9;
+    color: #4e546b;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* 加载中 */
+.main_loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 99;
+}
+
+.main_loading .loading_con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 96px;
+    height: 96px;
+}
+
+.main_loading .loading_con img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.main_loading .loading_circle {
+    width: 80px;
+    height: 80px;
+    border-top: 8px solid #11994b;
+    border-right: 8px solid #f2a808;
+    border-bottom: 8px solid #d723e7;
+    border-left: 8px solid #2548e6;
+    border-radius: 50%;
+    -webkit-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg)
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg)
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+

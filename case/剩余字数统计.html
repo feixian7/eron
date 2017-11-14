@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{padding: 0;margin: 0;}
+            textarea{width: 400px;height: 200px;}
+        </style>
+    </head>
+    <body>
+       
+        <textarea id="describe" class="describe" maxlength="500" placeholder="快告诉大家宝贝有多好，都等着你的购买心得呢～"></textarea>
+        <div class="text-num"><var id="areamsg">500</var>/500</div>
+   
+    </body>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            //先选出 textarea 和 统计字数 dom 节点
+            var textArea = $("#describe"),
+                word = $("#areamsg");
+                //调用
+                statInputNum(textArea, word);
+        });
+        
+        /*
+        
+        * 剩余字数统计
+        
+        * 注意 最大字数只需要在放数字的节点哪里直接写好即可 如：<var class="word">200</var>
+        
+        */
+        
+        function statInputNum(textArea, numItem) {
+            var max = numItem.text(),
+            curLength;
+            textArea[0].setAttribute("maxlength", max);
+            curLength = textArea.val().length;
+            numItem.text(max - curLength);
+            textArea.on('input propertychange', function() {
+                numItem.text(max - $(this).val().length);
+            });
+        }
+    </script>
+</html>
